@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Converter</h1>
+  <h3>Welcome to converter, this web convert your cm to any system, try now!</h3>
+  <h3>Insert your number on cm then select the kind of system to converter</h3>
+  <form id="calculateForm">
+    <label for="userNumber">Enter a number:</label>
+    <input type="text" id="userNumber" name="userNumber" placeholder="use only cm" required>
+    
+    <fieldset>
+        <legend>Please choose a system of conversion:</legend>
+        <label for="systemInternational">
+            <input type="radio" id="systemInternational" name="system" value="international" checked>
+            International
+        </label>
+
+        <label for="systemImperial">
+            <input type="radio" id="systemImperial" name="system" value="imperial">
+            Imperial
+        </label>
+    </fieldset>
+
+    <p>
+        <input type="submit" value="Calculate">
+    </p>
+</form>
+  <div id="result"></div>
+
+  <!-- <script src="spaghetti.js"></script> -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
